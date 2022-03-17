@@ -1,0 +1,54 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0px 20px;
+    padding: 20px;
+    overflow: none;
+}
+
+.card {
+    width: 1fr;
+    height: 410px;
+    border-radius: 25px;
+    background: #fdfffd;
+    box-shadow:  20px 20px 40px #d7d9d7,
+                -20px -20px 40px #ffffff;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 1s ease-in-out .5s;
+}
+
+.priceStock {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px 30px 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.price, p.stock {
+    margin-top: 0px;
+}
+
+.stock {
+    font-size: 15px;
+}
+
+img {
+    border-radius: 25px 25px 0px 0px;
+    height: 267px;
+    width: 400px;
+    overflow: hidden;
+}

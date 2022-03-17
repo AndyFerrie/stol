@@ -1,5 +1,5 @@
 import './App.css'
-import chairData from './db.json'
+import ChairGrid from './components/chairs/ChairGrid';
 import Header from './components/ui/Header';
 
 const App = () => {
@@ -8,12 +8,7 @@ const App = () => {
       
         <div className={"App"}>
             <Header />
-            {chairData.results.map(chair => 
-            <>
-              <img src={chair.urls.small} alt="" ></img>
-              <p>{chair.productName}</p>
-            </>
-            )}
+            <ChairGrid />
         </div>
     );
 }
